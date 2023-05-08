@@ -15,7 +15,6 @@ def test_arrs_add_2(arrs_fixture):
 def test_arrs_add_3(arrs_fixture):
     assert arrs.arrs_add(arrs_fixture) == [1, 2, 3, 4]
 
-
 def test_get(arrs_fixture):
     assert arrs.get(arrs_fixture, 1, "test") == 2
     assert arrs.get(arrs_fixture, -1, "test") == "test"
