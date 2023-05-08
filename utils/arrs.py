@@ -43,3 +43,19 @@ def my_slice(coll, start=0, end=None):
             normalized_start += length
 
     return coll[normalized_start:normalized_end]
+
+
+def arrs_add(array: list, *number) -> list:
+    """
+    Добавляет в лист неизвестное количество элементов, используем распаковку
+    :param array: исходный список.
+    :param *number: Кортеж чисел которые нужно добавить в исходный дист
+    :return: массив элементов
+    """
+    array_new = array
+
+    for i in number:
+         array_new.append(i)
+    return array_new
+
+
